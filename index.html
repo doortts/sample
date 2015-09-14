@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Channel chatting page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://ricostacruz.com/nprogress/nprogress.css" />
+    <link rel="stylesheet" href="http://www.p1c2.com/css/jquery.atwho.css" />
+    <link rel="stylesheet" href="http://www.p1c2.com/css/app.css" />
+    <link rel="stylesheet" href="http://www.p1c2.com/css/override.css" />
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">P1C2</a>
+        </div>
+    </div>
+</nav>
+<div class="channel-from container-fluid">
+    <div class="left-menu col-xs-2 sidebar">
+       <div class="sidebar">
+           <ul class="nav chan-header row">
+               <li role="presentation" class="active">채널목록</li>
+           </ul>
+           <div class="chan-list row">
+               <ul class="chan-list-item nav nav-sidebar">
+               </ul>
+           </div>
+           <ul class="nav chan-header row">
+               <li role="presentation" class="active">채널유저</li>
+           </ul>
+           <div class="chan-list row">
+               <ul class="chan-userlist nav nav-sidebar">
+               </ul>
+           </div>
+       </div>
+    </div>
+    <div class="col-sm-10 col-xs-12">
+        <form name="chatView">
+            <div class="row contents-header">
+                <div class="channel-name pull-left optionals"><span id="channelName"></span></div>
+                <div class="pull-right optionals btn">
+                    <button id="changeUserName" class="btn btn-default" type="button">OK</button>
+                </div>
+                <div class="pull-right optionals btn">
+                    <input id="username" type="text" class="form-control" placeholder="set username.."/>
+                </div>
+            </div>
+            <div class="row contents-body">
+                <div id="contents" class="contents col-xs-12">
+                </div>
+            </div>
+            <div class="row input-area">
+                <button type="button" class="file btn btn-default col-xs-1">file +</button>
+                <div class="col-sm-9 col-xs-9 message-input">
+                    <textarea id="message" rows="1" type="text" name="message" class="form-control"></textarea>
+                </div>
+                <input type="submit" id="chat-send" class="btn btn-danger col-xs-1" value="Send" />
+            </div>
+        </form>
+    </div>
+</div>
+<!-- scripts files from here-->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://ricostacruz.com/nprogress/nprogress.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="http://ichord.github.io/Caret.js/src/jquery.caret.js"></script>
+<script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script src="http://www.p1c2.com/js/jquery.atwho.js"></script>
+<script src="http://www.p1c2.com/js/app.js"></script>
+<script src="http://www.p1c2.com/js/notify.js"></script>
+<!-- scripts files end here-->
+</body>
+</html>
